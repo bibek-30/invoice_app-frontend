@@ -1,15 +1,16 @@
-import React from 'react'
+import Link from 'next/link';
+import React from 'react';
+
 
 const Sidebar = () => {
   return (
-    <div>
-      <div class="sidebar">
+      <div className="sidebar">
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <Link href="/dashboard">Home</Link>
           </li>
           <li>
-            <a href="#about">About</a>
+            <Link href="/about">About</Link>
           </li>
           <li>
             <a href="#services">Services</a>
@@ -19,7 +20,6 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
-    </div>
   );
 }
 

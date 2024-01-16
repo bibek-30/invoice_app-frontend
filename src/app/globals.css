@@ -218,12 +218,12 @@ a {
 }
 
 .sidebar {
-  position: fixed;
+  position: absolute;
   left: 0;
-  top: 30px;
-  bottom: 0;
-  width: 200px;
-  background-color: #333; /* Dark background color */
+  top: 50px;
+  bottom: -50px;
+  width: 450px;
+  background-color: #333;
   padding: 20px;
 }
 
@@ -234,12 +234,12 @@ a {
 }
 
 .sidebar ul li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .sidebar ul li a {
   text-decoration: none;
-  color: #fff; /* White text color */
+  color: #fff;
   font-weight: bold;
 }
 
@@ -259,6 +259,10 @@ a {
   line-height: 1.6; /* Increased line height for better readability */
 }
 
+.app_name{
+  color: black;
+  padding: 14px;
+}
 /* Media query for responsiveness */
 @media (max-width: 768px) {
   .sidebar {
@@ -267,6 +271,58 @@ a {
   .content {
     margin-left: 120px; /* Adjust margin for smaller screens */
   }
+}
+
+.dashboard_wrapper {
+  display: flex;
+  height: 100vh; /* Set the height as needed */
+}
+
+.sidebar_wrapper {
+  width: 25%;
+}
+
+.content_wrapper {
+  width: 75%;
+  padding: 50px;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 47%; /* Adjust the width as needed */
+  margin-bottom: 70px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 70px;
+  box-shadow: 0 4px 8px #ece4e4;
+  background-color: darkgray;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.icon-container {
+  display: flex;
+  gap: 10px;
+}
+
+i.material-icons {
+  font-size: 24px;
+  color: #555;
+}
+
+h2 {
+  font-size: 18px;
+  color: #555;
+  margin: 0;
 }
 
 

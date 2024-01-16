@@ -15,7 +15,7 @@ export default function Home() {
         discover, create, and share creative prompts.
       </p>
       <button>
-        <Link href="/signin">Login</Link>
+        <Link href="/signIn">Login</Link>
       </button>
     </section>
   );

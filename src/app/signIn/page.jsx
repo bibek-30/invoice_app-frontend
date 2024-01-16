@@ -22,8 +22,8 @@ const SignIn = () => {
     myHeaders.append("Content-Type", "application/json");
 
     var raw = JSON.stringify({
-      email: "Bibekshrestha828@gmail.com",
-      password: "admin",
+      email: email,
+      password: password,
     });
 
     var requestOptions = {
@@ -35,13 +35,15 @@ const SignIn = () => {
     fetch("http://127.0.0.1:8000/api/login", requestOptions)
       .then((response) => response.json())
       .then((result) => {
-        console.log(result);
+        // console.log(result);
         if (result.status === 200) {
           router.push('/dashboard');
+        } else {
+          alert("Invalid Username and Password!")
         }
       })
 
-      .catch((error) => console.log("error", error));
+      .catch((error) => alert("Invalid Username and Password!"));
     }
   
 
